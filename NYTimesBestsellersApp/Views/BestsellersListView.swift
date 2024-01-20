@@ -7,22 +7,22 @@
 
 import SwiftUI
 
-struct BestsellersListView: View {
+struct CategoriesListView: View {
+    
+    let data = MockData().data
     var body: some View {
         NavigationStack {
-            
+            List(data, id: \.self) {
+                Text($0.display_name)
+            }
+            .onTapGesture {
+                print("Selected")
+            }
+            .navigationTitle("Categories")
         }
-        .navigationTitle("Categories")
+        
     }
 }
-//
-//struct MockData {
-//    let data = [
-//    
-//    ]
-//}
-//
-//struct
 
 #Preview {
     BestsellersListView()
