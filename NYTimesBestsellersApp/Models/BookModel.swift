@@ -32,7 +32,7 @@ struct Book: Codable, Hashable {
     var sunday_review_link: String
     var article_chapter_link: String
     var isbns: [ISBN]
-    var buy_links: [buyLink]
+    var buy_links: [BuyLink]
     var book_uri: String
 }
 
@@ -54,7 +54,7 @@ struct ISBN: Codable, Hashable {
     var isbn13: String
 }
 
-struct buyLink: Codable, Hashable {
+struct BuyLink: Codable, Hashable {
     var name: String
     var url: String
 }

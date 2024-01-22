@@ -11,6 +11,7 @@ import SwiftUI
 enum NetworkError: Error {
     case invalidURL
     case invalidResponseCode
+    case notFound
 }
 
 final class NetworkManager {
@@ -48,6 +49,14 @@ final class NetworkManager {
         let (data, response) = try await URLSession.shared.data(for: request)
         
         let statusCode = (response as? HTTPURLResponse)?.statusCode
+        switch statusCode {
+            case 404:
+                throw NetworkError.notFound
+            case 200:
+                break
+            default:
+                throw NetworkError.invalidResponseCode
+        }
         if statusCode != 200 {
             throw NetworkError.invalidResponseCode
         }
@@ -69,7 +78,6 @@ final class NetworkManager {
         
         let statusCode = (response as? HTTPURLResponse)?.statusCode
         if statusCode != 200 {
-            print(statusCode)
             throw NetworkError.invalidResponseCode
         }
         

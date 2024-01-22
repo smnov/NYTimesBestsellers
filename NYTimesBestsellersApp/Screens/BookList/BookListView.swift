@@ -33,10 +33,15 @@ struct BookListView: View {
                                                 .frame(width: 100, height: 150)
                                         }
                                     }
-                                    .frame(width: 105, height: 155)
+                                    .overlay(rankView(rank: book.rank), alignment: .topLeading)
+                                    
+                            
                                     Text(book.title)
                                         .font(.caption)
+                                        .foregroundColor(.black)
+                                        .scaledToFit()
                                 }
+                                .frame(maxWidth: 110, maxHeight: 180)
                             }
                         }
                         .border(.gray, width:1)
@@ -55,6 +60,19 @@ struct BookListView: View {
                 }
         }
         
+    }
+}
+
+struct rankView: View {
+    
+    var rank: Int
+    
+    var body: some View {
+        Text(String(rank))
+            .foregroundColor(.black)
+            .frame(width:15, height: 15)
+            .background(Color(.systemGray2))
+            .fontDesign(.serif)
     }
 }
 
