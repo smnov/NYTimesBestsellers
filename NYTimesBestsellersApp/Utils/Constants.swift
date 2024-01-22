@@ -8,7 +8,7 @@
 import Foundation
 
 let baseURL = "https://api.nytimes.com/svc/books/v3/lists/"
-let API_KEY = "UNPGP4PMJ7gNijM9Zz6CqCGU12u0pdFj"
+let API_KEY = ""
 let categoriesURL = "\(baseURL)names.json?api-key=\(API_KEY)"
     
 func getBooksOfCategoryURL(category: String) -> String {

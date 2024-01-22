@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4BFED92B5E7420008755E9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFED82B5E7420008755E9 /* LoadingView.swift */; };
 		3A57521B2B57B7DB00EFA7E0 /* NYTimesBestsellersAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A57521A2B57B7DB00EFA7E0 /* NYTimesBestsellersAppApp.swift */; };
 		3A57521D2B57B7DB00EFA7E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A57521C2B57B7DB00EFA7E0 /* ContentView.swift */; };
 		3A57521F2B57B7DE00EFA7E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A57521E2B57B7DE00EFA7E0 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A4BFED82B5E7420008755E9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3A5752172B57B7DB00EFA7E0 /* NYTimesBestsellersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimesBestsellersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A57521A2B57B7DB00EFA7E0 /* NYTimesBestsellersAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesBestsellersAppApp.swift; sourceTree = "<group>"; };
 		3A57521C2B57B7DB00EFA7E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				3A5752342B57F3E400EFA7E0 /* Constants.swift */,
 				3A6DB5442B5B9DDC007FD987 /* BuyButton.swift */,
+				3A4BFED82B5E7420008755E9 /* LoadingView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				3A5752352B57F3E400EFA7E0 /* Constants.swift in Sources */,
 				3A57521D2B57B7DB00EFA7E0 /* ContentView.swift in Sources */,
 				3A57521B2B57B7DB00EFA7E0 /* NYTimesBestsellersAppApp.swift in Sources */,
+				3A4BFED92B5E7420008755E9 /* LoadingView.swift in Sources */,
 				3A6DB5362B58DC3A007FD987 /* BookListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

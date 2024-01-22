@@ -19,7 +19,7 @@ struct CategoriesListView: View {
                 }
                 .navigationTitle("Categories")
             } else {
-                Text("NO DATA :(")
+                LoadingView()
             }
         }
         .task {
